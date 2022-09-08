@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build",
     "dev": "nodemon backend/server.js"
   },
   "keywords": [],

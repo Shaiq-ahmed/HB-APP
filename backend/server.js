@@ -5,6 +5,7 @@ const roomRoutes = require('./routes/roomRoute');
 const userRoutes = require('./routes/userRoute');
 // const bodyParser = require('body-parser');
 const bookingRoutes = require('./routes/bookRoute');
+const path = require('path');
 
 const cookieParser = require('cookie-parser');
 
@@ -16,13 +17,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+__dirname = path.resolve();
 if (
   process.env.NODE_ENV === 'production' ||
   process.env.NODE_ENV === 'staging'
 ) {
-  app.use(express.static('client/build'));
+  app.use(express.static(path.join('/client/build')));
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/client/build/index.html'));
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
 
