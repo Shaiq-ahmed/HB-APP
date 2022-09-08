@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  margin: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif !important;
+  box-sizing: border-box !important;
+}
+
+#navbar {
+  color: white;
+}
+
+.small-img {
+  height: 250px;
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+
+.styled-button {
+  background-color: #d0021b !important;
+  color: white;
+  box-shadow: none !important;
+
+  border: none !important;
+}
+
+.bs {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+  border-radius: 5px !important;
+}
+
+.carousel-img {
+  border-radius: 5px !important;
+}
+
+/* input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px !important;
+  margin-left: 35% !important;
+} */
+
+.parent {
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+
+.reg-head {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+input {
+  margin-top: 20px !important;
+  width: 300px;
+  height: 40px !important;
+  /* padding: 12px 20px;
+  margin: 8px 0; */
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  border-radius: 5px;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid crimson;
+}
+.reg-div {
+  margin-top: 15px;
+}
+
+#log-reg {
+  width: 100% !important;
+}
+
+.reg-button {
+  border-radius: 5px;
+  width: 300px;
+  background-color: #d0021b;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+DropdownButton {
+  border-radius: 55px !important;
+  border: 1px solid violet !important;
+  color: black !important;
+  background-color: #d0021b !important;
+}
+
+.ant-picker {
+  width: auto !important;
+  height: 45px !important;
+  border: 1px solid crimson !important;
+  border-radius: 5px !important;
+  outline: 0 !important;
+  /* @media only screen and (min-width: 450px) {
+    height: 25px !important;
+    display: grid;
+  } */
+}
+.ant-picker:focus {
+  border-color: #d0021b;
+}
+#linkprofile {
+  text-decoration: none;
+  color: black;
+}
+
+option {
+  width: auto !important;
+  background-color: #d0021b;
+}
