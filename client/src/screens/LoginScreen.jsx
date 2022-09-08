@@ -26,6 +26,7 @@ const LoginScreen = () => {
     try {
       setLoading(true);
       const { data } = await axios.post('/api/users/login', user);
+      console.log(data);
       localStorage.setItem('currentUser', JSON.stringify(data));
       navigate('/');
     } catch (error) {

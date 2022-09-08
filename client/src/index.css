@@ -105,10 +105,6 @@ DropdownButton {
   border: 1px solid crimson !important;
   border-radius: 5px !important;
   outline: 0 !important;
-  /* @media only screen and (min-width: 450px) {
-    height: 25px !important;
-    display: grid;
-  } */
 }
 .ant-picker:focus {
   border-color: #d0021b;
