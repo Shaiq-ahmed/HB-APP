@@ -1,9 +1,8 @@
-client/node_modules
-node_modules
-/client/build
 
-# backend
-/backend/config
+node_modules
+
+
+
 
 
 
